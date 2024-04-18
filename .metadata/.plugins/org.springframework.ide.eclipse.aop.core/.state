@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_mvc"/>
+<aop-project name="spring_mvc2"/>
+<aop-project name="spring_mvc3"/>
+<aop-project name="spring_basic"/>
+<aop-project name="spring_mvc3_root"/>
+</aop-reference-model>

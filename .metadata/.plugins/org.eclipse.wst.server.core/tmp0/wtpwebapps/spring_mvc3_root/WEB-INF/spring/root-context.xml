@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- 오라클 정보를 가지고 있음 -->
+	<context:property-placeholder
+		location="classpath:props/jdbc.properties" />
+
+	<!-- 오라클 정보 입력 : pom.xml 에서 추가해야 사용가능 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.user}" />
+		<property name="password" value="${jdbc.pwd}" />
+
+		<!-- 동시에 사용할 수 있는 최대 커넥션의 수 -->
+		<property name="maxActive" value="${jdbc.maxActive}" />
+
+		<!-- 커넥션 풀에 반납할때 최대로 유지되는 커넥션의 수 -->
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+
+		<!-- 커넥션 풀에 반납할때 최소로 유지되는 커넥션의 수 -->
+		<property name="minIdle" value="${jdbc.minIdle}" />
+	</bean>
+
+	<!-- mybatis: config -->
+	<bean id="sqlSessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 위에거 가져옴 -->
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation"
+			value="classpath:mybatis-config.xml"></property>
+	</bean>
+
+	<!-- mybatis: SqlSessionTemplate -->
+	<bean id="sqlSessionTemplate"
+		class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+
+	<!-- DAO 는 모두 어노테이션 처리 -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.ict" />
+	
+	<!-- 트랜잭션 처리 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>
+
+
+
+
+
+

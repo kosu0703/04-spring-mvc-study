@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- MyBatis 에서 쿼리에 매핑되는 파라미터에 null 값이 있으면 에러발생 방지 -->
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<!-- MyBatis 에서 캐싱기능 종료 -->
+		<setting name="cacheEnabled" value="false" />
+	</settings>
+	<typeAliases>
+		<!-- 별칭설정 -->
+		<!-- 나중에 xml 에 VO 위치를 그냥 alias 값인 vo 로 사용할 수 있다. -->
+		<typeAlias type="com.ict.guestbook2.dao.VO" alias="vo" />
+		<typeAlias type="com.ict.guestbook.dao.GuestBookVO" alias="gvo" />
+		<typeAlias type="com.ict.bbs.dao.BbsVO" alias="bvo" />
+		<typeAlias type="com.ict.bbs.dao.CommentVO" alias="cvo" />
+		<typeAlias type="com.ict.board.dao.BoardVO" alias="bovo" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/guestbook2-mapper.xml" />
+		<mapper resource="mappers/guestbook-mapper.xml" />
+		<mapper resource="mappers/bbs-mapper.xml" />
+		<mapper resource="mappers/board-mapper.xml" />
+	</mappers>
+</configuration>

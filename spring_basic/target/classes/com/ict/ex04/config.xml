@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="age" class="com.ict.ex04.Age"></bean>
+	<!-- 생성자 사용 -->
+	<bean id="mp" class="com.ict.ex04.MyProcess">
+		<constructor-arg name="name" value="고길동"></constructor-arg>
+		<constructor-arg name="jumin" value="900909"></constructor-arg>
+		<constructor-arg name="gender" value="1"></constructor-arg>
+		<constructor-arg name="age" ref="age"></constructor-arg>
+	</bean>
+	<!-- setter 사용 -->
+	<bean id="mp2" class="com.ict.ex04.MyProcess">
+		<property name="name" value="하니"></property>
+		<property name="jumin" value="050505"></property>
+		<property name="gender" value="4"></property>
+		<property name="age" ref="age"></property>
+	</bean>
+	
+</beans>
