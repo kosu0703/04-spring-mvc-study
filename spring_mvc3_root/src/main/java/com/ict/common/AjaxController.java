@@ -16,10 +16,18 @@ public class AjaxController {
 	public ModelAndView getSpringAjax2() {
 		return new ModelAndView("ajax/ajax_exam2");
 	}
+	@GetMapping("spring_ajax2_1.do")
+	public ModelAndView getSpringAjax2_1() {
+		return new ModelAndView("ajax/ajax_exam2_1");
+	}
 	
 	@GetMapping("data_go.do")
 	public ModelAndView getData() {
 		return new ModelAndView("ajax/ajax_exam3");
 	}
 	
+	@GetMapping("data_go2.do")
+	public ModelAndView getData2() {
+		return new ModelAndView("ajax/ajax_exam4");
+	}
 }

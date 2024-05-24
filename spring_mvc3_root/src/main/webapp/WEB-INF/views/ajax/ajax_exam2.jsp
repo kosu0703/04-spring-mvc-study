@@ -27,12 +27,14 @@
 				success : function(data) {
 					let tbody = "";
 					$(data).find("member").each(function() {
+						//	태그 찾아서 
 						let m_idx = $(this).find("m_idx").text();
 						let m_id = $(this).find("m_id").text();
 						let m_pw = $(this).find("m_pw").text();
 						let m_name = $(this).find("m_name").text();
 						let m_age = $(this).find("m_age").text();
 						let m_reg = $(this).find("m_reg").text();
+						
 						tbody += "<tr>";
 						tbody += "<td>" + m_idx + "</td>";
 						tbody += "<td>" + m_id + "</td>";
@@ -68,8 +70,11 @@
 				method : "post" ,					//	전달방식
 				dataType : "text" ,					//	가져오는 결과 타입
 				success : function(data) {
-					if(data == '1'){
-						//	중복된 아이디가 없음
+					let m_id = $("#m_id").val();
+					//console.log(m_id);
+					
+					if(data == '1' && m_id){
+						//	중복된 아이디가 없으면서 아이디 입력창이 안비었으면
 						//	사용가능
 						$("#join_btn").removeAttr("disabled");
 						$("span").text("사용가능");
@@ -78,10 +83,11 @@
 						//	사용불가
 						$("#join_btn").attr("disabled", "disabled");
 						$("span").text("사용불가");
+					}else if (!m_id){
+						//	아이디 입력창이 비어있으면
+						$("#join_btn").attr("disabled", "disabled");
+						$("span").text("중복여부");
 					}
-				},
-				error : function() {
-					alert("읽기 실패");
 				}
 			});	
 		});
@@ -99,6 +105,10 @@
 					if (data == 0) {
 						alert("가입실패");
 					}else if (data == 1) {
+						// 폼 초기화
+						$("#myform")[0].reset();
+						$("span").text("중복여부");
+						$("#join_btn").attr("disabled", "disabled");
 						//	가입성공
 						$("#tbody").empty();
 						//	인풋타입일 때는 다시 리스트를 불러줘야한다.
@@ -125,6 +135,7 @@
 						//	경고창도 새로고침 되기때문에 안쓰는게 좋긴하다. 
 						alert("삭제실패");
 					}else if (data == 1) {
+						$('form[name=myform]')[0].reset();
 						//	삭제성공
 						$("#tbody").empty();
 						//	인풋타입일 때는 다시 리스트를 불러줘야한다.
@@ -154,7 +165,7 @@
             <tbody>
                 <tr>
                     <td>
-                    	<!-- id 키를 누르면 -->
+                    	<%-- id 키를 누르면 --%> 
                         <input type="text" size="14" name="m_id" id="m_id">
                         <br><span>중복여부</span>
                     </td>

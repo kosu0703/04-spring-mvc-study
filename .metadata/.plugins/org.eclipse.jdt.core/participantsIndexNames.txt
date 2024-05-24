@@ -27,6 +27,8 @@ D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \spring_mvc3\src\main\java
 D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3884715755.index
 \spring_mvc3_root2\src\main\java
+D:\kosu0703\05_spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3669774412.index
+\spring_mvc3_root\src\main\java
 D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3309487115.index
 \spring_mvc3_root_copy\src\main\java
 D:\kosu0703\05_spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2221450556.index
@@ -61,9 +63,9 @@ D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsear
 \spring_mvc3_root_copy\src\main\java
 D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1823557430.index
 \test\src\main\java
-D:\kosu0703\05_spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3345320996.index
-\spring_mvc3_root\src\main\java
 D:\kosu0703\05_spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\254168686.index
+\spring_mvc3_root\src\main\java
+D:\kosu0703\05_spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3345320996.index
 \spring_mvc3_root\src\main\java
 D:\kosu0703\spring_mvc_study\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2930336482.index
 \spring_mvc3_root\src\main\java

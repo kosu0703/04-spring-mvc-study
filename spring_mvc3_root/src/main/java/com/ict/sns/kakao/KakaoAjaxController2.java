@@ -5,8 +5,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
@@ -67,7 +65,7 @@ public class KakaoAjaxController2 {
 				String kakao_email = kvo.getKakao_account().getEmail();
 				
 				//	DB 에 저장하기
-				
+
 				
 				
 				//	ajax 에서는 text 로 받아서 / 슬래시로 쪼갠다.

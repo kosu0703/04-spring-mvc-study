@@ -18,6 +18,9 @@
 	function kakao_map04() {
 		location.href = "kakao_map04.do";
 	}
+	function kakao_map05() {
+		location.href = "kakao_map05.do";
+	}
 	function kakao_addr() {
 		location.href = "kakao_addr.do";
 	}

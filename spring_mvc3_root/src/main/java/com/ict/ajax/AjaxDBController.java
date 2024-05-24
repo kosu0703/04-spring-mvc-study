@@ -71,7 +71,6 @@ public class AjaxDBController {
 		
 		//	DB 갔다오기
 		String result = memberService.getIdChk(m_id);
-		
 		return result;
 	}
 	

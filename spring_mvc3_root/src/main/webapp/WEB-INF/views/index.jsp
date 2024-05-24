@@ -27,6 +27,9 @@
 	function spring_ajax2() {
 		location.href = "spring_ajax2.do";
 	}
+	function spring_ajax2_1() {
+		location.href = "spring_ajax2_1.do";
+	}
 	function spring_sns() {
 		location.href = "spring_sns.do";
 	}
@@ -38,6 +41,9 @@
 	}
 	function data_go() {
 		location.href = "data_go.do";
+	}
+	function data_go2() {
+		location.href = "data_go2.do";
 	}
 	function transaction_go() {
 		location.href = "transaction_go.do";
@@ -51,7 +57,8 @@
 	<button onclick="board_list()">게시판2</button>
 	<button onclick="shop_list()">쇼핑몰</button>
 	<button onclick="spring_ajax()">Spring-Ajax</button>
-	<button onclick="spring_ajax2()">Spring-Ajax2</button>
+	<button onclick="spring_ajax2()">Spring-Ajax-xml</button>
+	<button onclick="spring_ajax2_1()">Spring-Ajax-json</button>
 	<button onclick="spring_sns()">Spring-SNS</button>
 	<button onclick="dynamic_query()">동적쿼리</button>
 	<button onclick="email_send()">이메일 보내기</button>
