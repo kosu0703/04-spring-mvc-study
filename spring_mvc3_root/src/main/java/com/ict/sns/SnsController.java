@@ -37,6 +37,7 @@ public class SnsController {
 	public ModelAndView kakaoLogin(HttpServletRequest request) {
 		// 1. 인가 코드 받기
 		String code = request.getParameter("code");
+		System.out.println(code);
 
 		// 2. 토큰 받기 (인가 코드 가지고)
 		String reqURL = "https://kauth.kakao.com/oauth/token";
@@ -82,7 +83,7 @@ public class SnsController {
 
 				// 결과를 보자
 				String result = sb2.toString();
-				// System.out.println(result);
+				System.out.println(result);
 
 				// 3. 사용자 정보 가져오기 (토큰을 이용해서 )
 				// 받은 정보는 session 저장 ( ajax 를 사용하기 위해서 )

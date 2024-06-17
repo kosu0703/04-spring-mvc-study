@@ -1,0 +1,17 @@
+127.0.0.1 - - [17/Jun/2024:14:14:49 +0900] "GET / HTTP/1.1" 200 1927
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:50 +0900] "GET / HTTP/1.1" 200 1927
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:50 +0900] "GET /favicon.ico HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:53 +0900] "GET /spring_sns.do HTTP/1.1" 200 1523
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:54 +0900] "GET /resources/images/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%A1%9C%EA%B7%B8%EC%9D%B8.png HTTP/1.1" 200 26202
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:54 +0900] "GET /resources/images/naver_login.png HTTP/1.1" 200 10303
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:58 +0900] "GET /kakaologin.do?code=2y7_OjvR2XVDSshpGXrdSSAW_N8Zw6vmEjZUQJMw5EeCO-BvRUyYtQAAAAQKPXVbAAABkCSerbt-jFVpBnvzXw HTTP/1.1" 200 1926
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:14:58 +0900] "POST /kakao_user2.do HTTP/1.1" 200 39
+127.0.0.1 - - [17/Jun/2024:14:33:27 +0900] "GET / HTTP/1.1" 200 1927
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:33:28 +0900] "GET / HTTP/1.1" 200 1927
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:34:18 +0900] "GET /spring_sns.do HTTP/1.1" 200 1523
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:34:20 +0900] "GET /kakaologin.do?code=fi9RLUbqgKhCalpcmiM_AfBsx9bqWIvJzrTpY4wjNcCZ-K4pyb06gAAAAAQKKwzUAAABkCSwaavHP8VuE1ZNOQ HTTP/1.1" 200 1926
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:14:34:20 +0900] "POST /kakao_user2.do HTTP/1.1" 200 39
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:15:50:09 +0900] "GET / HTTP/1.1" 200 1927
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:15:50:12 +0900] "GET /spring_sns.do HTTP/1.1" 200 1523
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:15:50:13 +0900] "GET /kakaologin.do?code=Y2rDpsO2MZ21RRQOPEldKdLNDnkw0KZKBo7FwozFJxj_P12reC_RbAAAAAQKKiWQAAABkCT15unkNSpXBP-m7Q HTTP/1.1" 200 1926
+0:0:0:0:0:0:0:1 - - [17/Jun/2024:15:50:14 +0900] "POST /kakao_user2.do HTTP/1.1" 200 39
